@@ -7,7 +7,14 @@ public class recursion{
 
     */
     public static double sqrt(double n, double tolerance){
-
+      //sqrtH is a helper recursive function with more parameters
+      return sqrtH(n,1.,tolerance);
+    }
+  //absolute value method
+    private static double abs(double n){if(n<0) return n*-1;return n;}
+    private static double sqrtH(double n, double guess, double tolerance){
+      if(abs((guess*guess-n)/n)<tolerance)return guess;
+      sqrtH(n,( n / guess + guess) / 2),tolerance);
     }
 
     /*Recursively find the n'th fibbonaci number in linear time
@@ -25,4 +32,3 @@ public class recursion{
     }
 
 }
-    
