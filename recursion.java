@@ -8,13 +8,18 @@ public class recursion{
 
     */
     public static void main(String[] args) {
-      System.out.println("sqrt of "+ 2 +" is " +sqrt(2,.00001));
-      System.out.println("fib of 5 is "+ fib(0));
-      System.out.println("fib of 5 is "+ fib(1));
+      System.out.println("sqrt of "+ 0 +" is " +sqrt(0,.00001));
+      System.out.println("sqrt of "+ 3165401 +" is " +sqrt(3165401,.00001));
+      System.out.println("sqrt of "+ 25 +" is " +sqrt(25,.00001));
+      System.out.println("sqrt of "+ 5 +" is " +sqrt(5,.00001));
+      System.out.println("sqrt of "+ 4 +" is " +sqrt(4,.00001));
+      System.out.println("sqrt of "+ 10 +" is " +sqrt(10,.00001));
+      System.out.println("fib of 0 is "+ fib(0));
+      System.out.println("fib of 1 is "+ fib(1));
       System.out.println("fib of 5 is "+ fib(5));
-      System.out.println("fib of 5 is "+ fib(49));
-      System.out.println("fib of 5 is "+ fib(13));
-      System.out.println("fib of 5 is "+ fib(19));
+      System.out.println("fib of 49 is "+ fib(49));
+      System.out.println("fib of 13 is "+ fib(13));
+      System.out.println("fib of 19 is "+ fib(19));
     }
     public static double sqrt(double n, double tolerance){
       //sqrtH is a helper recursive function with more parameters
