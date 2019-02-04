@@ -20,6 +20,7 @@ public class recursion{
       System.out.println("fib of 49 is "+ fib(49));
       System.out.println("fib of 13 is "+ fib(13));
       System.out.println("fib of 19 is "+ fib(19));
+      System.out.println(makeAllSums(3));
     }
     public static double sqrt(double n, double tolerance){
       //sqrtH is a helper recursive function with more parameters
@@ -52,7 +53,20 @@ public class recursion{
   }
 
     /*As Per classwork*/
-  /*  public static ArrayList<Integer> makeAllSums(int n){
-  }*/
+  public static ArrayList<Integer> makeAllSums(int n){
+    ArrayList<Integer> s = new ArrayList<Integer>();
+    makeAllSumsH(s,n,0,0);
+    return s;
+  }
+  private static void makeAllSumsH(ArrayList<Integer> s, int n, int index,int sum){
+    if(index==n){
+       s.add(sum+index);
+       s.add(sum);
+     }
+    else{
+      makeAllSumsH(s,n,index+1,sum+index);
+      makeAllSumsH(s,n,index+1,sum);
+    }
+  }
 
 }
