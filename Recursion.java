@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class recursion{
+public class Recursion{
     /*You may write additional private methods */
 
     /*Recursively find the sqrt using Newton's approximation
